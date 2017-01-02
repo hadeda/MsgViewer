@@ -1,0 +1,5 @@
+These notes apply to version 1 of the DNP3 Viewer.
+make clean
+make - executable is Dnp3MessageViewer
+There are two *.txt files of dnp3 messages - convert them to binary using tohex.c
+sol.dnp is a binary file - by convention, use the dnp extension.
