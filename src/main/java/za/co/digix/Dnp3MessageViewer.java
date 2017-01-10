@@ -1,3 +1,4 @@
+package za.co.digix;
 import java.awt.*;
 import java.awt.BorderLayout;
 import java.awt.Container;

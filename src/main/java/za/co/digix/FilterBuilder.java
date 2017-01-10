@@ -24,7 +24,7 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA 
 // 
                                                                                                                                                  
-package org.htmlparser.parserapplications.filterbuilder; 
+package za.co.digix; 
  
 import java.awt.BorderLayout; 
 import java.awt.Component; 
