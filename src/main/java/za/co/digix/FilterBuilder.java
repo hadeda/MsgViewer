@@ -102,7 +102,11 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.WindowConstants; 
  
 import org.htmlparser.Parser; 
-import org.htmlparser.beans.FilterBean; 
+import org.htmlparser.beans.FilterBean;
+import org.htmlparser.parserapplications.filterbuilder.Filter;
+import org.htmlparser.parserapplications.filterbuilder.HtmlTreeCellRenderer;
+import org.htmlparser.parserapplications.filterbuilder.HtmlTreeModel;
+import org.htmlparser.parserapplications.filterbuilder.SubFilterList;
 import org.htmlparser.parserapplications.filterbuilder.layouts.NullLayoutManager; 
 import org.htmlparser.util.EncodingChangeException; 
 import org.htmlparser.util.NodeIterator; 
@@ -1232,7 +1236,7 @@ public class FilterBuilder
             frame.setBounds (0, 0, dimension.width, dimension.height / 2); 
             JTree tree = new JTree (new HtmlTreeModel (bean.getNodes ())); 
             tree.setRootVisible (false); 
-            tree.setCellRenderer (new HtmlTreeCellRenderer ()); 
+            tree.setCellRenderer (new HtmlTreeCellRenderer()); 
             JScrollPane treeView = new JScrollPane (tree); 
    frame.setContentPane (new JScrollPane ( 
        treeView, 
